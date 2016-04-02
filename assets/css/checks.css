@@ -1,0 +1,26 @@
+
+
+#check_inactivo{
+  background: url(../images/check.svg) no-repeat;
+  height: 35px;
+  background-size: contain;
+  margin-left: 11px;
+  cursor:pointer;
+}
+
+
+#check_inactivo_disabled{
+  background: url(../images/check.svg) no-repeat;
+  height: 35px;
+  background-size: contain;
+  margin-left: 11px;
+  cursor:no-drop;
+}
+
+#check_activo{
+  background: url(../images/check_activo.svg) no-repeat;
+  height: 35px;
+  background-size: contain;
+  margin-left: 11px;
+  cursor:no-drop;
+}

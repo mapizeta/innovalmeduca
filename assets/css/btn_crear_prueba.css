@@ -1,0 +1,81 @@
+
+
+
+.product-photo {
+    float: right;
+    height: 51px;
+    margin-right: 1px;
+    margin-top: -10px;
+}
+
+.c_prueba {
+  background: url(../images/b_crearprueba.jpg) no-repeat;
+  height: 61px;
+  width: 156px;
+  background-size: contain;
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.c_prueba:hover {
+  background: url(../images/b_crearprueba_h.jpg) no-repeat;
+  height: 61px;
+  width: 156px;
+  background-size: contain;
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.c_pregunta {
+  background: url(../images/crearpregunta.jpg) no-repeat;
+ height: 61px;
+  width: 156px;
+  background-size: contain;
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.c_pregunta:hover {
+  background: url(../images/crearpregunta_h.jpg) no-repeat;
+  height: 61px;
+  width: 156px;
+  background-size: contain;
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.c_alternativa {
+  background: url(../images/crearalternativa.jpg) no-repeat;
+  height: 61px;
+  width: 156px;
+  background-size: contain;
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.c_alternativa:hover {
+  background: url(../images/crearalternativa_h.jpg) no-repeat;
+  height: 61px;
+  width: 156px;
+  background-size: contain;
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.c_asignacionprueba {
+  background: url(../images/asignarprueba.jpg) no-repeat;
+  height: 61px;
+  width: 156px;
+  background-size: contain;
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.c_asignacionprueba:hover {
+  background: url(../images/asignarprueba_h.jpg) no-repeat;
+  height: 61px;
+  width: 156px;
+  background-size: contain;
+  margin-top: 10px;
+  margin-left: 3px;
+}

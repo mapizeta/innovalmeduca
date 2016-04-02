@@ -1,0 +1,61 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+require_once APPPATH."/tcpdf/tcpdf.php";
+
+class Profesor extends CI_Controller {
+	public function index()
+	{
+		$this->load->view('profesor/profesor_home');
+	}
+	public function ensayos()
+	{
+		$this->load->view('profesor/profesor_ensayos');
+	}
+	public function control_ensayo()
+	{
+		$this->load->view('profesor/profesor_control_ensayo');
+	}
+	public function generar_pdf($eid = 'DEMO'){
+		$pdf = new TCPDF('P', 'mm', 'A4', true, 'UTF-8', false);
+		date_default_timezone_set('America/Santiago');
+
+		// CONFIGURACION DEL DOCUMENTO
+		$pdf->SetCreator(PDF_CREATOR);
+		$pdf->SetAuthor('Optimiza Ltda');
+		$pdf->SetTitle('Reporte estadistico Prueba '.$eid);
+        $pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
+        $pdf->SetMargins(10, 10, 10, true);
+        //HEADER INCLUDE ASSETS
+        //CSS's
+ 
+        //==============================================================================+
+        // PORTADA PDF
+        //==============================================================================+
+        // Ocultar el header
+        $pdf->setPrintHeader(false);
+        // Ocultar el footer
+        $pdf->setPrintFooter(false);
+        // Añadir Página - PORTADA
+        $pdf->AddPage();
+        // Añadir marcador
+        $pdf->Bookmark('Portada', 0, 0);
+        $html= "
+			<div class='col-md-12 text-center' style='top: 40%;'>
+				<h1>TEST</h1>
+				
+			</div>
+        ";
+        $pdf->SetFont('helvetica', '', 17);
+        $pdf->writeHTMLCell($w = 0, $h = 0, $x = '', $y = '100', $html, $border = 0, $ln = 1, $fill = 0, $reseth = true, $align = 'center', $autopadding = true);
+        $pdf->SetFont('helvetica', '', 8);
+        //==============================================================================+
+        // FIN PORTADA PDF
+        //==============================================================================+        
+        ob_clean(); // NO BORRAR
+    	$pdf->Output('informe.pdf', 'I');
+		//$this->load->view('profesor/profesor_generar_pdf');	
+	}
+
+
+}
+?>

@@ -1,0 +1,8 @@
+.dia {
+width: 200px;
+height: 200px;
+
+border: 1px rgb(89,89,89) solid;
+
+background: rgb(236, 0, 0);
+}
