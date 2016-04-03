@@ -46,22 +46,13 @@ class Pdf_generador extends Estadistica
 
         $pdf->setPrintHeader(False);
 
-        // set default header data
-        //$pdf->SetHeaderData('encabezado_lengua.jpg', '230','', '', array(0,64,255), array(0,64,128));
-        
-        //$pdf->SetHeaderData($this->imagen_encabezado, 202, '', '', 22, 'JPG', '20', 'T', false, 300, '', false, false, 0, false, false, false);
-
-        //$pdf->SetHeaderData->this->Image('encabezado_lengua.jpg', -1, -1, 0, '26.6', 'JPG', '0', 'T', false, 300, '', false, false, 0, false, false, false);
 
 
-
-
-
-        $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE.' 001', PDF_HEADER_STRING, array(0,64,255), array(0,64,128));
+        //$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE.' 001', PDF_HEADER_STRING, array(0,64,255), array(0,64,128));
         $pdf->setFooterData(array(0,64,0), array(0,64,128)); 
  
         // set header and footer fonts
-        $pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
+        //$pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
         $pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));  
  
         // set default monospaced font
@@ -75,7 +66,7 @@ class Pdf_generador extends Estadistica
 
         
         //$pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
-        $pdf->SetHeaderMargin((PDF_MARGIN_TOP-28));
+        //$pdf->SetHeaderMargin((PDF_MARGIN_TOP-28));
 
         $pdf->SetFooterMargin(PDF_MARGIN_FOOTER);    
  
@@ -131,14 +122,15 @@ class Pdf_generador extends Estadistica
         $img_file = 'assets/images/'.$imagen_portada;
 
 
-        $pdf->Image($img_file, 0, 0, 216, 297, '', '', '', false, 300, '', false, false, 0);
+        //$pdf->Image($img_file, 0, 0, 216, 297, '', '', '', false, 300, '', false, false, 0);
+        $pdf->Image('assets/images/logo1.png', '3', '3', '30', '30', '', '', '', true, 300, '', false, false, 0, false, false, false);
         // restore auto-page-break status
         $pdf->SetAutoPageBreak($auto_page_break, $bMargin);
         // set the starting point for the page content
         $pdf->setPageMark();
         
 
-        $salto_linea="<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>";
+        $salto_linea="<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>";
         //$pdf->writeHTML($salto_linea, true, 0, true, true);
 
         // Print a text
@@ -171,6 +163,9 @@ class Pdf_generador extends Estadistica
         // 2da pagina
         // Add a page
         // This method has several options, check the source code documentation for more information.
+        $pdf->setHeaderFont(Array('helvetica', '', 8));
+        $pdf->SetHeaderData('', '', 'Araucanía Educativa', 'www.aeduc.cl - contacto@aeduc.cl');
+        $pdf->setHeaderMargin(2);
         $pdf->setPrintHeader(true);
 
         $pdf->AddPage(); 

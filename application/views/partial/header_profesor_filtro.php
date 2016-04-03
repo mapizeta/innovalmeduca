@@ -88,7 +88,7 @@
 						<a href="#" class="sidebar-mobile-toggler pull-left hidden-md hidden-lg" class="btn btn-navbar sidebar-toggle" data-toggle-class="app-slide-off" data-toggle-target="#app" data-toggle-click-outside="#sidebar">
 							<i class="ti-align-justify"></i>
 						</a>
-						<a class="navbar-brand" href="#"  style="background-image: url(http://aeduc.cl/images/logo_nav.svg); background-size: 171px;background-repeat: no-repeat;margin-left: 32px;margin-top: 3px;margin-right: -24px;">
+						<a class="navbar-brand" href="#"  style="background-image: url(<?php echo base_url();?>assets/images/logo3.png); background-size: 171px;background-repeat: no-repeat;margin-left: 32px;margin-top: 3px;margin-right: -24px;">
 						
 						</a>
 						<a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app" style="margin-left: -3px;">

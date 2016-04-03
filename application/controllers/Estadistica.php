@@ -157,8 +157,8 @@ class Estadistica extends CI_Controller {
         switch ($this->alias)
         {
             case "MATE":
-                $this->imagen_encabezado='encabezado_mate.jpg';
-                $this->imagen_pie_pagina='pie_pag_mate.jpg';
+                $this->imagen_encabezado='encabezado.jpg';
+                $this->imagen_pie_pagina='pie_pag.jpg';
                 $this->imagen_portada='portada_informe_mate.jpg';
                 $this->fondo_th='#1d71b8';
                 $this->fondo_principal='#d1d1d4';
@@ -170,8 +170,8 @@ class Estadistica extends CI_Controller {
                 $this->color_barra='#1d71b8';
                 break;
             case "RESOL":
-                $this->imagen_encabezado='encabezado_mate.jpg';
-                $this->imagen_pie_pagina='pie_pag_mate.jpg';
+                $this->imagen_encabezado='encabezado.jpg';
+                $this->imagen_pie_pagina='pie_pag.jpg';
                 $this->imagen_portada='portada_informe_mate.jpg';
                 $this->fondo_th='#1d71b8';
                 $this->fondo_principal='#d1d1d4';
@@ -183,8 +183,8 @@ class Estadistica extends CI_Controller {
                 $this->color_barra='#1d71b8';
                 break;
             case "LENG":
-                $this->imagen_encabezado='encabezado_lengua.jpg';
-                $this->imagen_pie_pagina='pie_pag_lengua.jpg';
+                $this->imagen_encabezado='encabezado.jpg';
+                $this->imagen_pie_pagina='pie_pag.jpg';
                 $this->imagen_portada='portada_informe_lenguaje.jpg';
                 $this->fondo_th='#ea5bOc';
                 $this->fondo_principal='#d1d1d4';
@@ -196,8 +196,8 @@ class Estadistica extends CI_Controller {
                 $this->color_barra='#d86639';
                 break;
             case "COMLEC":
-                $this->imagen_encabezado='encabezado_lengua.jpg';
-                $this->imagen_pie_pagina='pie_pag_lengua.jpg';
+                $this->imagen_encabezado='encabezado.jpg';
+                $this->imagen_pie_pagina='pie_pag.jpg';
                 $this->imagen_portada='portada_informe_lenguaje.jpg';
                 $this->fondo_th='#ea5bOc';
                 $this->fondo_principal='#d1d1d4';
@@ -209,21 +209,21 @@ class Estadistica extends CI_Controller {
                 $this->color_barra='#d86639';
                 break;
             case "CIEN":
-                $this->imagen_encabezado='encabezado_ciencias.jpg';
-                $this->imagen_pie_pagina='pie_pag_ciencias.jpg';
+                $this->imagen_encabezado='encabezado.jpg';
+                $this->imagen_pie_pagina='pie_pag.jpg';
                 $this->imagen_portada='portada_informe_ciencias.jpg';
-                $this->fondo_th='#009640';
-                $this->fondo_principal='#d1d1d4';
+                $this->fondo_th='#659830';
+                $this->fondo_principal='#FFFFFF';
                 $this->fondo_col_principal='#009640';
                 $this->fondo_col_secundaria='white';
-                $this->fuente_color='#009640';
-                $this->fuente_color_portada='#009640';
+                $this->fuente_color='#000000';
+                $this->fuente_color_portada='#000000';
                 $this->fuente_color_th = 'white';
-                $this->color_barra='#009640';
+                $this->color_barra='#336699';
                 break;
             case "HIST":
-                $this->imagen_encabezado="encabezado_histo.jpg";
-                $this->imagen_pie_pagina="pie_pag_histo.jpg";
+                $this->imagen_encabezado="encabezado.jpg";
+                $this->imagen_pie_pagina="pie_pag.jpg";
                 $this->imagen_portada="portada_informe_historia.jpg";
                 $this->fondo_th='#dedc00';
                 $this->fondo_principal='#d1d1d4';
@@ -235,8 +235,8 @@ class Estadistica extends CI_Controller {
                 $this->color_barra='#dedc00';
                 break;
             case "FORM":
-                $this->imagen_encabezado="encabezado_histo.jpg";
-                $this->imagen_pie_pagina="pie_pag_histo.jpg";
+                $this->imagen_encabezado="encabezado.jpg";
+                $this->imagen_pie_pagina="pie_pag.jpg";
                 $this->imagen_portada="portada_informe_historia.jpg";
                 $this->fondo_th='#dedc00';
                 $this->fondo_principal='#d1d1d4';
@@ -276,11 +276,12 @@ class Estadistica extends CI_Controller {
         
             border-collapse: collapse; 
             border:groove white 1px;
+            /*
             border-left-width: 1px;
             border-right-width: 1px;
             border-top-width: 1px;
             border-bottom-width: 1px;
-            
+            */
             }
 
             th {
@@ -292,25 +293,32 @@ class Estadistica extends CI_Controller {
             border-top-width: 1px;
             border-bottom-width: 1px;
 
-            border-left-color: white;
-            border-right-color: white;
-            border-top-color: white;
-            border-bottom-color: white;
+            border-left-color: #CCCCCC;
+            border-right-color: #CCCCCC;
+            border-top-color: #CCCCCC;
+            border-bottom-color: #CCCCCC;
             color:'.$this->fuente_color_th.';
             }
 
+            /*
+            td.border
+                    {
+                        border:1px solid #CCCCCC;
+                        padding:3px 7px 2px 7px;
+                    }
+            */
             td {
        
-            border:groove #ACCFE8 1px; 
+            /*border:groove #ACCFE8 1px;*/ 
             border-left-width: 1px;
             border-right-width: 1px;
             border-top-width: 1px;
             border-bottom-width: 1px;
 
-            border-left-color: white;
-            border-right-color: white;
-            border-top-color: white;
-            border-bottom-color: white;
+            border-left-color: #CCCCCC;
+            border-right-color: #CCCCCC;
+            border-top-color: #CCCCCC;
+            border-bottom-color: #CCCCCC;
 
             }
 
@@ -318,7 +326,7 @@ class Estadistica extends CI_Controller {
                 
             background-color: '.$this->fondo_principal.';
             color: '.$this->fuente_color.';
-            font-weight: bold;
+            /*font-weight: bold;*/
             }
 
             .col_principal{
@@ -364,22 +372,19 @@ class Estadistica extends CI_Controller {
         
         $this->tabla_portada_a='<table cellspacing="0" cellpadding="0" border="0" align="center"
                 style="font-size:28;color:'.$this->fuente_color.'">
-        <tr><td align="center">INFORME ESTADISTICO</td></tr>
+        <tr><td align="center">ESTADÍSTICA PME</td></tr>
         <tr><td><b>'.$this->nombre_colegio.'</b></td></tr></table>';
         
         $this->tabla_portada_b='<table cellspacing="0" cellpadding="0" border="0" align="center"
                 style="color:'.$this->fuente_color_portada.'" class="first">
                 <tr valign="top">
-                    <td width="400" align="left">PRUEBA '. $this->tipo_prueba .' DE '. $this->nombre_subsector. '</td>
+                    <td width="400" align="left">Asignatura: '. $this->nombre_subsector. '</td>
                 </tr>
                 <tr valign="top">
                     <td align="left">'.$this->nombre_nivel_curso.' '.$this->letra.'</td>
                 </tr>
                 <tr valign="top">
-                    <td align="left">Fecha Aplicación:</td>
-                </tr>
-                <tr valign="top">
-                    <td align="left">19/11/2015</td>
+                    <td align="left">Fecha: '.$this->fecha_realizacion.'</td>
                 </tr>
                 <tr valign="top">
                     <td align="left">'.$this->comuna. ', Chile</td>
@@ -431,13 +436,13 @@ class Estadistica extends CI_Controller {
                             <th colspan="1">&nbsp;</th>
                         </tr>
                         <tr valign="top"  align="center" class="principal">
-                            <td>% Correctas</td>
-                            <td>% Incorrectas</td>
-                            <td>% Omitidas</td>
-                            <td>Insuficiente</td>
-                            <td>Elemental</td>
-                            <td>Adecuado</td>
-                            <td>Ptje. promedio</td>
+                            <th>% Correctas</th>
+                            <th>% Incorrectas</th>
+                            <th>% Omitidas</th>
+                            <th>Insuficiente</th>
+                            <th>Elemental</th>
+                            <th>Adecuado</th>
+                            <th>Ptje. promedio</th>
                         </tr>
                         <tr valign="top" align="center" class="principal">
                             <td>' .$this->totalcorrectas.'%</td>
@@ -1018,7 +1023,7 @@ class Estadistica extends CI_Controller {
 
         $this->contenido_tabla.='<div align="center" class="espacio">Rendimiento por Alumno - Prueba '.$this->tipo_prueba.'</div>
                         <table align="center" border="1" cellpading="0" cellspacing="0" class="first">
-                            <tr valign="top" align="center">
+                            <tr valign="top" align="center" bgcolor="#F5F5F5">
                                 <th align="center" width="30">N°</th>
                                 <th align="center" width="300">Alumno</th>
                                 <th align="center" width="80">N° Correctas</th>
@@ -1043,13 +1048,13 @@ class Estadistica extends CI_Controller {
             $nota = $value['nota'];
             $nivel = $value['nivel'];
             
-            $this->contenido_tabla.='<tr>
+            $this->contenido_tabla.='<tr class="principal">
                                         <th align="center">'.($key+1).'</th>
                                         <th align="left">'.$nombre_alu.'</th>
-                                        <td align="center" class="col_secundaria">'.$num_correctas.'</td>
-                                        <td align="center" class="col_secundaria">'.$num_incorrectas.'</td>
-                                        <td align="center" class="col_secundaria">'.$num_omitidas.'</td>
-                                        <td align="center" class="col_secundaria">'.$puntaje.'</td>
+                                        <td align="center">'.$num_correctas.'</td>
+                                        <td align="center">'.$num_incorrectas.'</td>
+                                        <td align="center">'.$num_omitidas.'</td>
+                                        <td align="center">'.$puntaje.'</td>
                                     </tr>';
         }
 
@@ -1096,13 +1101,13 @@ class Estadistica extends CI_Controller {
             $nota = $value['nota'];
             $nivel = $value['nivel'];
             
-            $this->tabla_b.='<tr>
+            $this->tabla_b.='<tr class="principal">
                                 <th align="center">'.($key+1).'</th>
                                 <th align="left">'.$nombre_alu.'</th>
-                                <td align="center" class="col_secundaria">'.$num_correctas.'</td>
-                                <td align="center" class="col_secundaria">'.$porc_correctas.'%</td>
-                                <td align="center" class="col_secundaria">'.$nivel.'</td>
-                                <td align="center" class="col_secundaria">'.$nota.'</td>
+                                <td align="center">'.$num_correctas.'</td>
+                                <td align="center">'.$porc_correctas.'%</td>
+                                <td align="center">'.$nivel.'</td>
+                                <td align="center">'.$nota.'</td>
                             </tr>';
         }
 
@@ -1218,12 +1223,12 @@ class Estadistica extends CI_Controller {
         
         foreach ($det_resp as $key => $value) 
         {
-            $this->tabla_det.='<tr valign="top">';
+            $this->tabla_det.='<tr valign="top" class="principal">';
             $this->tabla_det.='<th align="center">'.($key+1).'</th>
                                 <th align="left">'.$det_resp[$key]['fullname'].'</th>
-                                <td align="center" class="col_secundaria">'.$det_resp[$key]['correctas'].'</td>
-                                <td align="center" class="col_secundaria">'.$det_resp[$key]['incorrectas'].'</td>
-                                <td align="center" class="col_secundaria">'.$det_resp[$key]['omitidas'].'</td>';
+                                <td align="center">'.$det_resp[$key]['correctas'].'</td>
+                                <td align="center">'.$det_resp[$key]['incorrectas'].'</td>
+                                <td align="center">'.$det_resp[$key]['omitidas'].'</td>';
             $this->tabla_det.='</tr>';
 
             //print_r($tabla.$det_resp[$key]['fullname'].'<br/>');
@@ -1274,14 +1279,14 @@ class Estadistica extends CI_Controller {
 
             $omitidas=$det_repeticion[$key]['omitidas'];
 
-            $this->tabla_rep.='<tr align="center">';
+            $this->tabla_rep.='<tr align="center" class="principal">';
             $this->tabla_rep.='<th>'.($key+1).'</th>
                          <th>'.$resp_correcta.'</th>
-                         <td class="col_secundaria">'.$alt_a.'</td>
-                         <td class="col_secundaria">'.$alt_b.'</td>
-                         <td class="col_secundaria">'.$alt_c.'</td>
-                         <td class="col_secundaria">'.$alt_d.'</td>
-                         <td class="col_secundaria">'.$omitidas.'</td>';
+                         <td>'.$alt_a.'</td>
+                         <td>'.$alt_b.'</td>
+                         <td>'.$alt_c.'</td>
+                         <td>'.$alt_d.'</td>
+                         <td>'.$omitidas.'</td>';
             $this->tabla_rep.='</tr>';
             
         }
@@ -1327,13 +1332,13 @@ class Estadistica extends CI_Controller {
             $on=$det_preg_ord_rep[$key]['on'];
             $or=$det_preg_ord_rep[$key]['or'];
 
-            $this->tabla_ord_rep .='<tr align="center">';
-            $this->tabla_ord_rep .='<td class="col_secundaria">'.$cn.'</td>
-                                <td class="col_secundaria">'.$cr.'</td>
-                                <td class="col_secundaria">'.$in.'</td>
-                                <td class="col_secundaria">'.$ir.'</td>
-                                <td class="col_secundaria">'.$on.'</td>
-                                <td class="col_secundaria">'.$or.'</td>';
+            $this->tabla_ord_rep .='<tr align="center" class="principal">';
+            $this->tabla_ord_rep .='<td>'.$cn.'</td>
+                                <td>'.$cr.'</td>
+                                <td>'.$in.'</td>
+                                <td>'.$ir.'</td>
+                                <td>'.$on.'</td>
+                                <td>'.$or.'</td>';
             $this->tabla_ord_rep.='</tr>';
 
             //print_r($tabla.$det_resp[$key]['fullname'].'<br/>');
@@ -1400,7 +1405,7 @@ class Estadistica extends CI_Controller {
             $sub_array_1=array_keys($det_rend_habilidades[$key]);
             $sub_array_1=array_slice($sub_array_1, 1);  
 
-            $this->tabla_datos_1.='<tr valign="top">';
+            $this->tabla_datos_1.='<tr valign="top" class="principal">';
             $this->tabla_datos_1.='<th align="center">'.($key+1).'</th>';
 
             foreach($sub_array_1 as $subkey2=>$value_sub_2)
@@ -1417,7 +1422,7 @@ class Estadistica extends CI_Controller {
                 }
                 else
                 {
-                    $clase='class="col_secundaria"';
+                    $clase="";
                     $alineacion="center";
                     $porcentaje="%";
                     $ancho=$this->ancho_columnas;
@@ -1499,6 +1504,8 @@ class Estadistica extends CI_Controller {
 
     public function detalle_rendimiento_alumno_eje($id_asignacionprueba)
     {
+        //$this->ancho_columnas=(428/6);
+
         $det_rend_alu_eje=$this->estadistica_model->getRAE($id_asignacionprueba); 
         $encabezado_tabla=$this->estadistica_model->getTPE($id_asignacionprueba); 
 
@@ -1544,8 +1551,8 @@ class Estadistica extends CI_Controller {
             $sub_array_1=array_keys($det_rend_alu_eje[$key]);
             $sub_array_1=array_slice($sub_array_1, 1);
 
-            $this->tabla_det_rae_1.='<tr valign="top">';
-            $this->tabla_det_rae_1.='<td align="center" class="col_principal">'.($key+1).'</td>';
+            $this->tabla_det_rae_1.='<tr valign="top" class="principal">';
+            $this->tabla_det_rae_1.='<th align="center">'.($key+1).'</th>';
 
             foreach($sub_array_1 as $subkey2=>$value_sub_2)
             {
@@ -1560,10 +1567,10 @@ class Estadistica extends CI_Controller {
                 }
                 else
                 {
-                    $clase='class="col_secundaria"';
+                    $clase="";
                     $alineacion="center";
                     $porcentaje="%";
-                    $ancho=$this->ancho_columnas;
+                    $ancho=$ancho_columnas;
                     $ti = "<td";
                     $tf = "</td>";
                 }
@@ -1632,6 +1639,7 @@ class Estadistica extends CI_Controller {
             }
         }
         $this->tabla_rae_sep.='</tr></table>';
+        //echo $this->tabla_rae_sep;
     }
 
     public function tabla_especificaciones($id_asignacionprueba)
@@ -1651,13 +1659,13 @@ class Estadistica extends CI_Controller {
            
             $sub_array_1=array_keys($especificaciones[$key]);
 
-            $this->tabla_det_esp.='<tr valign="top">';
-            $this->tabla_det_esp.='<td align="center" class="col_secundaria">'.($key+1).'</td>';
+            $this->tabla_det_esp.='<tr valign="top" class="principal">';
+            $this->tabla_det_esp.='<td align="center">'.($key+1).'</td>';
 
             foreach($sub_array_1 as $subkey2=>$value_sub_2)
             {
                 $this->tabla_det_esp.='
-                <td align="center" class="col_secundaria">'.$value[$value_sub_2].'</td>'; 
+                <td align="center">'.$value[$value_sub_2].'</td>'; 
             }
             $this->tabla_det_esp.='</tr>';
         }

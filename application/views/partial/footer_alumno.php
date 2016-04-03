@@ -12,7 +12,7 @@
 				<div class="footer-inner" >
 					
 					<div class="pull-left" style="color: #000000!important;margin-top: 10px;margin-left: 40%;">
-						<span > Sistema de Administración de Pruebas(v2.0).</span> <span class="text-bold text-uppercase">AEDUC</span>&copy; <span class="current-year"></span>
+						<span > Sistema de Administración de Pruebas.</span> <span class="text-bold text-uppercase">Innovalm</span>&copy; <span class="current-year"></span>
 					</div>
 					<div class="pull-right">
 						<span class="go-top"><i class="ti-angle-up"></i></span>

@@ -93,7 +93,7 @@
 					<!-- start: NAVBAR HEADER -->
 					<div class="navbar-header" >
 						
-						<a class="navbar-brand" href="#"  style="background-image: url(http://aeduc.cl/images/logo_nav.svg); background-size: 171px;background-repeat: no-repeat;margin-left: 32px;margin-top: 3px;margin-right: -24px;">
+						<a class="navbar-brand" href="#"  style="background-image: url(<?php echo base_url();?>assets/images/logo3.png); background-size: 171px;background-repeat: no-repeat;margin-left: 32px;margin-top: 3px;margin-right: -24px;">
 						
 						</a>
 						
@@ -105,22 +105,7 @@
 					<!-- end: NAVBAR HEADER -->
 					<!-- start: NAVBAR COLLAPSE -->
 					<div class="navbar-collapse collapse" >
-					<!--
-					<div class="input-group" style="margin-top: 16px;margin-left: 16px;">
-					      <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
-					      <input type="text" id="filtro" name="filtro">
-					</div>-->
-
-
-<!--
-
-<div class="input-group" style="margin-top: 16px;margin-left: 16px;">
-					      <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
-					      <input type="text" id="filtro" name="filtro">
-					</div>-->
-
-
-
+					
 					<div class="dropdown" style="
 					    float: right;
 					    margin-right: -17px;
@@ -140,33 +125,6 @@
 					 </div>
 
 
-<!--
-						<ul >
-							 
-							<li class="dropdown current-user">
-								<a href class="dropdown-toggle" data-toggle="dropdown">
-									<div class="item-media">
-										<span class="fa-stack"> <i class="fa fa-user" style="font-size: 41px; margin-top: 18px; color: white;"></i> </span>
-										<span class="username"><?php echo ("  ".$usuario); ?>
-											<i class="ti-angle-down" style="font-size: 41px; margin-top: 18px; color: white;"></i>
-										</span>
-									</div>
-								</a>
-								<ul class="dropdown-menu dropdown-dark">
-									<li>
-										<a href="#">
-											Editar mis datos
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Cerrar Sesión
-										</a>
-									</li>
-								</ul>
-							</li>
-							 end: USER OPTIONS DROPDOWN 
-						</ul>-->
 
 						<!-- start: MENU TOGGLER FOR MOBILE DEVICES -->
 						<div class="close-handle visible-xs-block menu-toggler" data-toggle="collapse" href=".navbar-collapse">

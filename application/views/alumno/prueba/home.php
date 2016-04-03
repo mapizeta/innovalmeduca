@@ -10,18 +10,14 @@
     <div class="nina" style="float: left; position: fixed; z-index: 5000; margin-top: 154px; margin-left: -252px;">
            <img style="margin-top: -110px; margin-left: -39px; margin-right: -2px; width: 244px;" src="<?php echo base_url().'assets/images/ninaindicando.png'; ?>">
     </div>
-    <div class="demo2" style="float: left;
-    position: fixed;
-    z-index: 5000;
-    margin-top: 240px;
-    margin-left: -252px;"></div>
+    <!--<div class="demo2" style="float: left;position: fixed;z-index: 5000;margin-top: 240px;margin-left: -252px;"></div>-->
     <div id='data-respondidas'style="float: left;
     background-color: #2C3541;
     font-size: 19px;
     width: 216px;
     position: fixed;
     z-index: 5000;
-    margin-top: 332px;
+    margin-top: 265px;
     margin-left: -270px;"></div>
     <button type='button' id='finalizar' style=" background-color: #2F8FCE; border-color: #2F8FCE; float: left; position: fixed; z-index: 5000; margin-top: 465px; margin-left: -219px;" class='btn btn-primary btn-sm ' data-fancybox-type='iframe' href='<?php echo base_url('index.php/alumno/modal_finalizar_prueba/');?><?php  echo '/'; echo $id_asignacionprueba; echo '/'; echo $id_usuario; ?>'><i class='glyphicon glyphicon-off'></i> Finalizar Prueba</button>
 

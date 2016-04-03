@@ -7,60 +7,50 @@ $this->load->view('partial/header_login', $data);
 		<link href="<?php echo base_url();?>assets/vendor/sweetalert/sweet-alert.css" rel="stylesheet" media="screen">
 	<!-- end: HEAD -->
 	<!-- start: BODY -->
-	<body class="login" style="background: url('<?php echo base_url()."assets/images/login.jpg";?>') no-repeat center center fixed;background-size: 1736px;">
+	<body>
 		<!-- start: LOGIN -->
-		<div class="row">
-			<div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-				<div class="logo margin-top-30">
-					<img src='<?php echo base_url()."assets/images/login.png";?>' style="height: 151px;margin-left: 94px;">
+	
+	  <section id="content" class="m-t-lg wrapper-md animated fadeInUp">    
+    <div class="container aside-xxl">
+      
+      <div class="logo margin-top-30">
+					<img src='<?php echo base_url()."assets/images/logo3.png";?>' style="height: 127px;">
 				</div>
-				<!-- start: LOGIN BOX -->
-				<div class="box-login">
-					<form class="form-login" action="index.html">
-						<fieldset>
-							<legend>
-								SIMCE
-							</legend>
-							<p style="color:#FFFFFF;">
-								Por favor, ingresa tu Rut y tu contraseña.
-							</p>
-							<div class="form-group">
-								<span class="input-icon">
-									<input id="rut" type="text" class="form-control" name="username" placeholder="12.123.123-4">
-									<label class="label label-danger" id="rut-incorrecto">Rut Incorrecto</label>
-									<i class="fa fa-user"></i> </span>
-							</div>
-							<div class="form-group form-actions">
-								<span class="input-icon">
-									<input id="pas" type="password" class="form-control password" name="password" placeholder="Contraseña">
-									<i class="fa fa-lock"></i>
-								</span>
-							</div>
-							<div class="form-actions">
-								
-								<button type="submit" class="btn btn-primary pull-right">
-									Entrar <i class="fa fa-arrow-circle-right"></i>
-								</button>
-							</div>
-						</fieldset>
-					</form>
-					<!-- start: COPYRIGHT -->
-					<div class="copyright" style="color:#FFFFFF;">
-							&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> MIDETEED 2016 (v 2.0) </span>. <span>Desarrollado por Aeduc</span>
-					</div>
-					<!-- end: COPYRIGHT -->
-				</div>
-				<!-- end: LOGIN BOX -->
-			</div>
-		</div>
+      <section class="panel panel-default bg-white m-t-lg">
+      	
+        <form action="index.html" class="panel-body wrapper-lg form-login">
+          <div class="form-group">
+            <label class="control-label">Usuario</label>
+            <input id="rut" type="text" placeholder="12.123.123-4" class="form-control input-lg" name="username">
+          </div>
+          <div class="form-group">
+            <label class="control-label">Contraseña</label>
+            <input type="password" id="pas" placeholder="Contraseña" class="form-control input-lg" name="password">
+          </div>
+          <button type="submit" class="btn btn-primary pull-left">
+				Entrar
+		  </button>          
+          
+          <!--<button type="submit" class="btn btn-primary">Entrar</button>-->
+          
+          <div class="line line-dashed"></div>
+          <!-- <a href="#" class="btn btn-facebook btn-block m-b-sm"><i class="fa fa-facebook pull-left"></i>Sign in with Facebook</a> -->
+          
+          <div class="line line-dashed"></div>
+          
+        </form>
+      </section>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="text-center padder">
+      <p>
+        <small>Innovalm Educa 2016 </span>. <span>Desarrollado por Innovalm</span></small>
+      </p>
+    </div>
+  </footer>	
 
-
-		<script src="<?php echo base_url();?>assets/vendor/jquery/jquery.min.js"></script>
-		<script src="<?php echo base_url();?>assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-		<script src="<?php echo base_url();?>assets/vendor/modernizr/modernizr.js"></script>
-		<script src="<?php echo base_url();?>assets/vendor/jquery-cookie/jquery.cookie.js"></script>
-		<script src="<?php echo base_url();?>assets/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-		<script src="<?php echo base_url();?>assets/vendor/switchery/switchery.min.js"></script>
 		<!-- end: MAIN JAVASCRIPTS -->
 		<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 		<script src="<?php echo base_url();?>assets/vendor/jquery-validation/jquery.validate.js"></script>
